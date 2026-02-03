@@ -30,9 +30,16 @@ namespace LL_UserInput
             //Exception Handler
             try
             {
-                TotalNames = int.Parse(Console.ReadLine());
+                string input = Console.ReadLine();
+
+                if (string.IsNullOrWhiteSpace(input))
+                    throw new Exception("No Input Detected.");
+
+                TotalNames = int.Parse(input);
+
                 if (TotalNames < 5 || TotalNames > 10)
                     throw new Exception("Please enter numbers from 5-10");//declaring new exception for 5-10 limit
+                
             }
             catch (FormatException)//For string input warning
             {
@@ -55,38 +62,35 @@ namespace LL_UserInput
             Console.ForegroundColor = ConsoleColor.White;
             for(int i = 0; i < TotalNames; i++)
             {
-                //using if else looping for a clean display of interface
-                if (i == 0)
-                {
-                    i++;
-                    Console.Write($"{i}st Name: ");
-                    string inputname = Console.ReadLine();
-                    name.AddLast(inputname);
-                    i--;
-                }
-                else if (i == 1)
-                {
-                    i++;
-                    Console.Write($"{i}nd Name: ");
-                    string inputname = Console.ReadLine();
-                    name.AddLast(inputname);
-                    i--;
-                }
+                
+                string suffix;
+                if (i == 1)
+                    suffix = "st";
                 else if (i == 2)
+                    suffix = "nd";
+                else if (i == 3)
+                    suffix = "rd";
+                else
+                    suffix = "th";
+                NewPoint:
+                Console.Write($"{i}{suffix} Name: ");
+
+                try
                 {
                     i++;
-                    Console.Write($"{i}rd Name: ");
-                    string inputname = Console.ReadLine();
-                    name.AddLast(inputname);
+                    string inputName = Console.ReadLine();
+                    if (string.IsNullOrWhiteSpace(inputName))
+                        throw new Exception("Input cannot be empty.");
+                    name.AddLast(inputName);
                     i--;
                 }
-                else
+                catch(Exception ex)
                 {
-                    i++;
-                    Console.Write($"{i}th Name: ");
-                    string inputname = Console.ReadLine();
-                    name.AddLast(inputname);
-                    i--;
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(ex.Message);
+                    Thread.Sleep(1000);
+                    Console.ForegroundColor = ConsoleColor.White;
+                    goto NewPoint;
                 }
             }
 
@@ -98,23 +102,14 @@ namespace LL_UserInput
             foreach (string value in name)
             {
                 string suffix;
-
                 if (index == 1)
-                {
                     suffix = "st";
-                }
                 else if (index == 2)
-                {
                     suffix = "nd";
-                }
                 else if (index == 3)
-                {
                     suffix = "rd";
-                }
                 else
-                {
                     suffix = "th";
-                }
 
                 Console.WriteLine($"{index}{suffix}: {value}");
                 index++;
@@ -142,22 +137,15 @@ namespace LL_UserInput
             {
                 string suffix;
 
-                if (index == 1)
-                {
-                    suffix = "st";
-                }
-                else if (index == 2)
-                {
+                if (index == 1)         
+                    suffix = "st";          
+                else if (index == 2)         
                     suffix = "nd";
-                }
-                else if (index == 3)
-                {
-                    suffix = "rd";
-                }
-                else
-                {
+                else if (index == 3)           
+                    suffix = "rd";           
+                else        
                     suffix = "th";
-                }
+            
 
                 Console.WriteLine($"{index}{suffix}: {value}");
                 index++;
