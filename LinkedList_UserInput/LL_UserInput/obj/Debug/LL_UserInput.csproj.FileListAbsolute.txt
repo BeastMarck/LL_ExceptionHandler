@@ -1,0 +1,16 @@
+C:\Users\ACT-STUDENT\source\repos\LL_UserInput\bin\Debug\LL_UserInput.exe.config
+C:\Users\ACT-STUDENT\source\repos\LL_UserInput\bin\Debug\LL_UserInput.exe
+C:\Users\ACT-STUDENT\source\repos\LL_UserInput\bin\Debug\LL_UserInput.pdb
+C:\Users\ACT-STUDENT\source\repos\LL_UserInput\obj\Debug\LL_UserInput.csproj.AssemblyReference.cache
+C:\Users\ACT-STUDENT\source\repos\LL_UserInput\obj\Debug\LL_UserInput.csproj.CoreCompileInputs.cache
+C:\Users\ACT-STUDENT\source\repos\LL_UserInput\obj\Debug\LL_UserInput.exe
+C:\Users\ACT-STUDENT\source\repos\LL_UserInput\obj\Debug\LL_UserInput.pdb
+C:\Users\ACT-STUDENT\source\repos\LL_UserInput\obj\Debug\LL_UserInput.exe.config
+C:\Users\ACT-STUDENT\Source\Repos\LinkedList_UserInput\LL_UserInput\bin\Debug\LL_UserInput.exe.config
+C:\Users\ACT-STUDENT\Source\Repos\LinkedList_UserInput\LL_UserInput\bin\Debug\LL_UserInput.exe
+C:\Users\ACT-STUDENT\Source\Repos\LinkedList_UserInput\LL_UserInput\bin\Debug\LL_UserInput.pdb
+C:\Users\ACT-STUDENT\Source\Repos\LinkedList_UserInput\LL_UserInput\obj\Debug\LL_UserInput.csproj.AssemblyReference.cache
+C:\Users\ACT-STUDENT\Source\Repos\LinkedList_UserInput\LL_UserInput\obj\Debug\LL_UserInput.exe.config
+C:\Users\ACT-STUDENT\Source\Repos\LinkedList_UserInput\LL_UserInput\obj\Debug\LL_UserInput.csproj.CoreCompileInputs.cache
+C:\Users\ACT-STUDENT\Source\Repos\LinkedList_UserInput\LL_UserInput\obj\Debug\LL_UserInput.exe
+C:\Users\ACT-STUDENT\Source\Repos\LinkedList_UserInput\LL_UserInput\obj\Debug\LL_UserInput.pdb
